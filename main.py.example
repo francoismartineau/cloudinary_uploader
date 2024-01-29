@@ -1,0 +1,8 @@
+from tools import authenticate_to_cloudinary, upload_files_from_folder
+
+if __name__ == "__main__":
+    authenticate_to_cloudinary()
+    dir = '/Some/folder/words'
+    cloudinary_folder = "words"
+    exts = ['.txt']
+    upload_files_from_folder(dir, exts, cloudinary_folder, ['words'])
